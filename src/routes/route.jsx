@@ -10,7 +10,7 @@ const routes = [
     },
     {
         path:"/dashboard",
-        // element: <ProtectedRoute/>,
+        element: <ProtectedRoute/>,
         children: [
             {path:"index", element:<DashboardPage/>}
         ]

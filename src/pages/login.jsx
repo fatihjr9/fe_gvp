@@ -27,6 +27,7 @@ function Login() {
 
             if (res.data.responseResult && user) {
                 localStorage.setItem("user", JSON.stringify(user));
+                localStorage.setItem("token", user.token);
                 toast.success("Login berhasil!");
                 navigate('/dashboard/index')
               } else {
